@@ -7,9 +7,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
 function displayUser2(data){
     const ul =document.getElementById('users-list');
     for(let user of data){
-        console.log(user.name);
+        console.log(user.username);
         const li = document.createElement('li');
-        li.innerText = user.name;
+        li.innerText = user.username;
         ul.appendChild(li);
     }
 }
